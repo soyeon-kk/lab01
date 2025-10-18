@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="선택을 시작하겠습니까?"
+            android:textSize="16sp"/>
+
+        <CheckBox
+            android:id="@+id/cbStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="시작함" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:text="좋아하는 애완동물은?"
+            android:textSize="16sp"/>
+
+        <RadioGroup
+            android:id="@+id/rgPets"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="false">
+
+            <RadioButton
+                android:id="@+id/rbDog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="강아지"
+                android:checked="true"/>
+
+            <RadioButton
+                android:id="@+id/rbCat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="고양이"/>
+
+            <RadioButton
+                android:id="@+id/rbRabbit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="토끼"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="선택 완료"
+            android:enabled="false"
+            android:layout_marginTop="12dp"/>
+
+        <ImageView
+            android:id="@+id/imgPet"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:layout_marginTop="12dp"
+            android:scaleType="centerCrop"
+            android:adjustViewBounds="true"
+            android:visibility="gone"/>
+    </LinearLayout>
+</ScrollView>
